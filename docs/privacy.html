@@ -7,70 +7,145 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 100%;
+            margin: 0;
+            padding: 12px;
             background-color: #f8f9fa;
+            font-size: 16px;
         }
         .container {
             background-color: white;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
         }
         h1 {
             color: #2c3e50;
             text-align: center;
-            margin-bottom: 30px;
-            font-size: 28px;
+            margin-bottom: 24px;
+            font-size: 24px;
+            font-weight: 600;
         }
         h2 {
             color: #34495e;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 18px;
+            font-weight: 600;
             border-left: 4px solid #3498db;
-            padding-left: 10px;
+            padding-left: 12px;
+            line-height: 1.4;
         }
         h3 {
             color: #2c3e50;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin-top: 24px;
+            margin-bottom: 12px;
             font-size: 16px;
+            font-weight: 600;
         }
         p {
-            margin-bottom: 12px;
-            text-indent: 2em;
+            margin-bottom: 16px;
+            text-indent: 0;
+            line-height: 1.7;
+            word-break: break-word;
         }
         .highlight {
             background-color: #e8f4fd;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
             border-left: 4px solid #3498db;
+            font-size: 15px;
         }
         .important {
             background-color: #fff3cd;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
             border-left: 4px solid #ffc107;
+            font-size: 15px;
         }
         ul {
             padding-left: 20px;
+            margin: 16px 0;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            line-height: 1.6;
+            word-break: break-word;
         }
         .footer {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 32px;
             padding-top: 20px;
             border-top: 1px solid #eee;
             color: #666;
             font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* 移动端专用样式 */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+                font-size: 15px;
+            }
+            .container {
+                padding: 16px;
+                border-radius: 8px;
+            }
+            h1 {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 17px;
+                margin-top: 28px;
+                padding-left: 10px;
+            }
+            h3 {
+                font-size: 15px;
+                margin-top: 20px;
+            }
+            .highlight, .important {
+                padding: 12px;
+                margin: 16px 0;
+                font-size: 14px;
+            }
+            ul {
+                padding-left: 18px;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+        }
+        
+        /* 小屏幕设备优化 */
+        @media (max-width: 480px) {
+            body {
+                padding: 6px;
+                font-size: 14px;
+            }
+            .container {
+                padding: 12px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 16px;
+                margin-top: 24px;
+            }
+            h3 {
+                font-size: 14px;
+            }
+            .highlight, .important {
+                padding: 10px;
+                font-size: 13px;
+            }
         }
     </style>
 </head>
@@ -111,9 +186,9 @@
         </ul>
 
         <h2>3. 信息分享</h2>
-        <p>我们承诺不会出售您的个人信息。在以下情况下，我们可能会分享您的信息：</p>
+        <p>在以下情况下，我们可能会分享您的信息：</p>
         <ul>
-            <li>经您明确同意</li>
+            <li>为提供和改善服务所必需的情况下</li>
             <li>与符合相关数据保护标准的第三方服务提供商合作（如云存储、技术支持服务等）</li>
             <li>遵守法律法规要求</li>
             <li>保护我们或他人的合法权益、财产或安全</li>
@@ -147,8 +222,8 @@
             <li>删除特定的个人信息</li>
             <li>限制信息处理</li>
             <li>数据可携带权</li>
-            <li>撤回同意</li>
         </ul>
+        <p>如果您不再认可我们的隐私政策，您可以选择注销账户或卸载应用。注销账户后，我们将按照相关法律法规处理您的个人信息。</p>
 
         <h2>6. 第三方服务</h2>
         <p>我们的应用可能包含第三方服务的链接或集成功能。这些第三方服务有自己的隐私政策，我们建议您仔细阅读。对于第三方服务的隐私实践，我们无法控制且不承担责任。</p>
