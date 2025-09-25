@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我们</title>
+    <title>About Us</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
@@ -102,7 +102,15 @@
             line-height: 1.5;
         }
         
-        /* 移动端专用样式 */
+        /* Language-specific styles */
+        .lang-zh {
+            display: none;
+        }
+        .lang-en {
+            display: block;
+        }
+        
+        /* Mobile-specific styles */
         @media (max-width: 768px) {
             body {
                 padding: 8px;
@@ -142,7 +150,7 @@
             }
         }
         
-        /* 小屏幕设备优化 */
+        /* Small screen optimization */
         @media (max-width: 480px) {
             body {
                 padding: 6px;
@@ -173,14 +181,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>关于我们</h1>
+        <h1 class="lang-en">About Us</h1>
+        <h1 class="lang-zh">关于我们</h1>
         
-        <h2>产品介绍</h2>
-        <p>我们致力于为用户提供优质的移动应用体验。通过不断的技术创新和产品优化，我们的应用旨在简化您的日常工作，提高效率，让您专注于最重要的事情。</p>
+        <h2 class="lang-en">Product Introduction</h2>
+        <h2 class="lang-zh">产品介绍</h2>
+        <p class="lang-en">We are committed to providing users with high-quality mobile application experiences. Through continuous technological innovation and product optimization, our application aims to simplify your daily work, improve efficiency, and let you focus on what matters most.</p>
+        <p class="lang-zh">我们致力于为用户提供优质的移动应用体验。通过不断的技术创新和产品优化，我们的应用旨在简化您的日常工作，提高效率，让您专注于最重要的事情。</p>
         
-        <h2>核心优势</h2>
+        <h2 class="lang-en">Core Advantages</h2>
+        <h2 class="lang-zh">核心优势</h2>
         <div class="feature-list">
-            <ul>
+            <ul class="lang-en">
+                <li><strong>Easy to Use</strong> - Intuitive user interface, easy to get started</li>
+                <li><strong>Powerful Features</strong> - Rich functional modules to meet diverse needs</li>
+                <li><strong>Safe and Reliable</strong> - Advanced security technology to protect your data</li>
+                <li><strong>Efficient and Convenient</strong> - Optimized operation process to improve work efficiency</li>
+                <li><strong>Cross-platform Support</strong> - Support for multiple devices and operating systems</li>
+            </ul>
+            <ul class="lang-zh">
                 <li><strong>简单易用</strong> - 直观的用户界面，轻松上手</li>
                 <li><strong>功能强大</strong> - 丰富的功能模块，满足多样化需求</li>
                 <li><strong>安全可靠</strong> - 采用先进的安全技术，保护您的数据</li>
@@ -189,29 +208,83 @@
             </ul>
         </div>
         
-        <h2>我们的使命</h2>
-        <p>我们的使命是通过技术创新为用户创造价值，让每一个人都能享受到科技带来的便利。我们相信，优秀的产品应该简单、实用、可靠，能够真正解决用户的实际问题。</p>
+        <h2 class="lang-en">Our Mission</h2>
+        <h2 class="lang-zh">我们的使命</h2>
+        <p class="lang-en">Our mission is to create value for users through technological innovation, allowing everyone to enjoy the convenience brought by technology. We believe that excellent products should be simple, practical, and reliable, and truly solve users' practical problems.</p>
+        <p class="lang-zh">我们的使命是通过技术创新为用户创造价值，让每一个人都能享受到科技带来的便利。我们相信，优秀的产品应该简单、实用、可靠，能够真正解决用户的实际问题。</p>
         
-        <h2>产品特色</h2>
-        <p><strong>用户至上：</strong>始终以用户需求为导向，持续优化产品体验。</p>
-        <p><strong>品质保证：</strong>严格的质量控制流程，确保产品稳定可靠。</p>
-        <p><strong>持续创新：</strong>紧跟技术发展趋势，不断推出新功能和改进。</p>
-        <p><strong>贴心服务：</strong>提供及时、专业的客户支持服务。</p>
+        <h2 class="lang-en">Product Features</h2>
+        <h2 class="lang-zh">产品特色</h2>
+        <p class="lang-en"><strong>User First:</strong> Always user needs oriented, continuously optimizing product experience.</p>
+        <p class="lang-zh"><strong>用户至上：</strong>始终以用户需求为导向，持续优化产品体验。</p>
+        <p class="lang-en"><strong>Quality Assurance:</strong> Strict quality control processes to ensure product stability and reliability.</p>
+        <p class="lang-zh"><strong>品质保证：</strong>严格的质量控制流程，确保产品稳定可靠。</p>
+        <p class="lang-en"><strong>Continuous Innovation:</strong> Keeping up with technological development trends, continuously launching new features and improvements.</p>
+        <p class="lang-zh"><strong>持续创新：</strong>紧跟技术发展趋势，不断推出新功能和改进。</p>
+        <p class="lang-en"><strong>Thoughtful Service:</strong> Providing timely and professional customer support services.</p>
+        <p class="lang-zh"><strong>贴心服务：</strong>提供及时、专业的客户支持服务。</p>
         
-        <h2>技术团队</h2>
-        <p>我们拥有一支经验丰富的技术团队，团队成员在移动应用开发、用户体验设计、数据安全等领域具有深厚的专业知识。我们始终坚持以技术驱动产品发展，为用户提供最佳的使用体验。</p>
+        <h2 class="lang-en">Technical Team</h2>
+        <h2 class="lang-zh">技术团队</h2>
+        <p class="lang-en">We have an experienced technical team with deep expertise in mobile application development, user experience design, data security and other fields. We always adhere to technology-driven product development to provide users with the best user experience.</p>
+        <p class="lang-zh">我们拥有一支经验丰富的技术团队，团队成员在移动应用开发、用户体验设计、数据安全等领域具有深厚的专业知识。我们始终坚持以技术驱动产品发展，为用户提供最佳的使用体验。</p>
         
-        <h2>联系我们</h2>
+        <h2 class="lang-en">Contact Us</h2>
+        <h2 class="lang-zh">联系我们</h2>
         <div class="contact-info">
-            <p style="text-indent: 0;">如果您在使用过程中遇到任何问题，或者有任何建议和意见，欢迎随时联系我们：</p>
-            <p style="text-indent: 0;"><strong>邮箱：</strong> captain9911@163.com</p>
-            <p style="text-indent: 0;">我们将竭诚为您提供优质的技术支持和客户服务。</p>
+            <p class="lang-en" style="text-indent: 0;">If you encounter any problems during use, or have any suggestions and comments, please feel free to contact us:</p>
+            <p class="lang-zh" style="text-indent: 0;">如果您在使用过程中遇到任何问题，或者有任何建议和意见，欢迎随时联系我们：</p>
+            <p class="lang-en" style="text-indent: 0;"><strong>Email:</strong> captain9911@163.com</p>
+            <p class="lang-zh" style="text-indent: 0;"><strong>邮箱：</strong> captain9911@163.com</p>
+            <p class="lang-en" style="text-indent: 0;">We will sincerely provide you with high-quality technical support and customer service.</p>
+            <p class="lang-zh" style="text-indent: 0;">我们将竭诚为您提供优质的技术支持和客户服务。</p>
         </div>
         
         <div class="footer">
-            <p>&copy; 2025 oldboard.tech 保留所有权利.</p>
-            <p>感谢您选择我们的产品！</p>
+            <p class="lang-en">&copy; 2025 oldboard.tech All rights reserved.</p>
+            <p class="lang-en">Thank you for choosing our product!</p>
+            <p class="lang-zh">&copy; 2025 oldboard.tech 保留所有权利.</p>
+            <p class="lang-zh">感谢您选择我们的产品！</p>
         </div>
     </div>
+
+    <script>
+        // Function to detect if user is from mainland China
+        function isChineseUser() {
+            // Get browser language
+            var browserLang = navigator.language || navigator.userLanguage;
+            
+            // Check if user is from mainland China (China only, not Singapore or other Chinese-speaking regions)
+            if (browserLang.toLowerCase() === 'zh-cn') {
+                return true;
+            }
+            
+            return false;
+        }
+        
+        // Function to set language display
+        function setLanguage() {
+            // Hide all elements
+            var allElements = document.querySelectorAll('.lang-en, .lang-zh');
+            for (var i = 0; i < allElements.length; i++) {
+                allElements[i].style.display = 'none';
+            }
+            
+            // Determine which language to show
+            var showChinese = isChineseUser();
+            
+            // Show elements for selected language
+            var langClass = showChinese ? '.lang-zh' : '.lang-en';
+            var elementsToShow = document.querySelectorAll(langClass);
+            for (var i = 0; i < elementsToShow.length; i++) {
+                elementsToShow[i].style.display = 'block';
+            }
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage();
+        });
+    </script>
 </body>
 </html>
